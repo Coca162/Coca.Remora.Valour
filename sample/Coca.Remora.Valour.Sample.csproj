@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	<EnablePreviewFeatures>True</EnablePreviewFeatures>
+	<TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Remora.Commands" Version="10.0.1" />
+    <PackageReference Include="Remora.Extensions.Options.Immutable" Version="1.0.3" />
+    <PackageReference Include="Valour.Api" Version="0.1.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Coca.Remora.Valour.csproj" />
+  </ItemGroup>
+
+</Project>

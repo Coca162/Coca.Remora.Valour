@@ -1,0 +1,1 @@
+This project is a showcase of a basic project that uses Coca.Remora.Valour. Setup only requires for you to input the bot's credentials.
