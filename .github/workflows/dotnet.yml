@@ -1,0 +1,39 @@
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+          fetch-depth: 0
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 7.0.x
+        include-prerelease: true
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore /p:ContinuousIntegrationBuild=true
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+    - name: Get Version
+      uses: dotnet/nbgv@v0.4.0
+      id: nbgv
+
+    - name: Publish Nuget Package
+      uses: alirezanet/publish-nuget@v3.0.4
+      with:
+        PROJECT_FILE_PATH: src/Coca.Remora.Valour.csproj
+        VERSION_STATIC: ${{steps.nbgv.outputs.NuGetPackageVersion}}
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
