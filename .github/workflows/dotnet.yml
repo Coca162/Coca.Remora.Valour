@@ -35,5 +35,5 @@ jobs:
       uses: alirezanet/publish-nuget@v3.0.4
       with:
         PROJECT_FILE_PATH: src/Coca.Remora.Valour.csproj
-        VERSION_STATIC: steps.nbgv.outputs.NuGetPackageVersion
+        VERSION_STATIC: ${{steps.nbgv.outputs.NuGetPackageVersion}}
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
