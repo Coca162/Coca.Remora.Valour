@@ -23,7 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore /p:ContinuousIntegrationBuild=true
+      run: dotnet build --no-restore /p:PublicRelease=true
     - name: Test
       run: dotnet test --no-build --verbosity normal
 

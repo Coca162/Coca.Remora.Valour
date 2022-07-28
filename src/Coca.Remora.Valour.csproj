@@ -13,9 +13,14 @@
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<PackageIcon>logo.png</PackageIcon>
 	<PackageTags>valour, api, messaging, bots, commands</PackageTags>
+	<EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 
-  <ItemGroup>
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+	<ItemGroup>
     <None Include="..\logo.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
