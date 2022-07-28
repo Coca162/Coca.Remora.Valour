@@ -27,9 +27,13 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
 
+    - name: Get Version
+    - uses: dotnet/nbgv@master
+      id: nbgv
+
     - name: Publish Nuget Package
       uses: alirezanet/publish-nuget@v3.0.4
       with:
         PROJECT_FILE_PATH: src/Coca.Remora.Valour.csproj
-        VERSION_FILE_PATH: src/Coca.Remora.Valour.csproj
+        VERSION_STATIC: steps.nbgv.outputs.NuGetPackageVersion
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
