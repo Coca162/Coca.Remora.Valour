@@ -28,7 +28,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
     - name: Get Version
-    - uses: dotnet/nbgv@master
+    - uses: dotnet/nbgv@v0.4.0
       id: nbgv
 
     - name: Publish Nuget Package
