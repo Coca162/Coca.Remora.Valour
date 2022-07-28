@@ -11,6 +11,7 @@
     }
   },
   "pathFilters": [
-    ":!sample"
+    ":!sample/",
+    ":!.github/",
   ]
 }
