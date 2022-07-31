@@ -7,7 +7,7 @@
 	<EnablePreviewFeatures>True</EnablePreviewFeatures>
 	<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 	<Authors>Coca</Authors>
-	<Description> The glue between Valour.Api and Rermora.Commands </Description>
+	<Description> The glue between Valour.Api and Remora.Commands </Description>
 	<PackageProjectUrl>https://github.com/Coca162/Coca.Remora.Valour</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Coca162/Coca.Remora.Valour</RepositoryUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
