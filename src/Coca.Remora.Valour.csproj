@@ -4,16 +4,15 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<EnablePreviewFeatures>True</EnablePreviewFeatures>
-	<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
-	<Authors>Coca</Authors>
-	<Description> The glue between Valour.Api and Remora.Commands </Description>
-	<PackageProjectUrl>https://github.com/Coca162/Coca.Remora.Valour</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/Coca162/Coca.Remora.Valour</RepositoryUrl>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageIcon>logo.png</PackageIcon>
-	<PackageTags>valour, api, messaging, bots, commands</PackageTags>
-	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <Authors>Coca</Authors>
+    <Description> The glue between Valour.Api and Remora.Commands </Description>
+    <PackageProjectUrl>https://github.com/Coca162/Coca.Remora.Valour</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Coca162/Coca.Remora.Valour</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageTags>valour, api, messaging, bots, commands</PackageTags>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
