@@ -33,6 +33,7 @@ jobs:
 
     - name: Publish Nuget Package
       uses: alirezanet/publish-nuget@v3.0.4
+      if: github.ref == 'refs/heads/main'
       with:
         PROJECT_FILE_PATH: src/Coca.Remora.Valour.csproj
         TAG_COMMIT: false
