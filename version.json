@@ -11,8 +11,7 @@
     }
   },
   "pathFilters": [
-    "./logo.png",
-    "./Directory.Build.props",
-    "./src/"
+    "Directory.Build.props",
+    "src/"
   ]
 }
