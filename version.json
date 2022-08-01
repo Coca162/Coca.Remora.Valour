@@ -11,7 +11,8 @@
     }
   },
   "pathFilters": [
-    ":!sample/",
-    ":!.github/",
+    ":logo.png",
+    ":Directory.Build.props",
+    ":src/",
   ]
 }
