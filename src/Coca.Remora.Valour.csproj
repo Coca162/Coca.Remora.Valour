@@ -40,7 +40,7 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
     <PackageReference Include="Remora.Commands" Version="10.0.1" />
     <PackageReference Include="Remora.Extensions.Options.Immutable" Version="1.0.3" />
-	<PackageReference Include="Valour.Api" Version="0.1.3.7" />
+	<PackageReference Include="Valour.Api" Version="0.1.5.3" />
   </ItemGroup>
 
 </Project>
